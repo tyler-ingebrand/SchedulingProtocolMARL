@@ -1,0 +1,5 @@
+cloudpickle==2.2.0
+Gymnasium==0.26.3
+gymnasium-notices==0.0.1
+numpy
+PettingZoo==1.22.2

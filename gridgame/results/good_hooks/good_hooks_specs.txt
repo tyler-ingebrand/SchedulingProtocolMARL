@@ -1,0 +1,58 @@
+
+15_agents_STR-Protocol_quality:
+fist run of STR protocol on 15 15_agents_STR: 02/08/2023
+
+## SPECS ##
+game_size = 10 #int num_rows = num_columns = game_size
+number_agents = 15
+number_steps = 5_000_000 # 5_000_000
+number_testing_steps = 500 # (for rendering)
+timeout = 200
+turn length = time_to_go + 2
+same reward as default CSMA-CD
+
+####################
+gridgame/results/good_hooks/15_agents_hook_RR-Protocol_300_timeout.pkl
+hook for first saved videos for RR protocol
+### PARAMETERS ###
+use_protocol = True
+save_video = True
+render = False
+game_size = 10 #int num_rows = num_columns = game_size
+number_agents = 15
+number_steps = 10_000_000 # 5_000_000
+number_testing_steps = 1000 # (for rendering)
+
+### SET PROTOCOL ###
+# protocol = "CSMA_CD"
+protocol = "RR"
+# protocol = "STR"
+if use_protocol == False:
+    protocol = 'None'
+
+turn_length = int(game_size * 1) 
+timeout = 300
+
+
+
+###################
+gridgame/results/good_hooks/15_agents_hook_RR-Protocol_200_timeout.pkl
+Horrible Results. 
+### PARAMETERS ###
+use_protocol = True
+save_video = True
+render = False
+game_size = 10 #int num_rows = num_columns = game_size
+number_agents = 15
+number_steps = 5_000_000 # 5_000_000
+number_testing_steps = 1000 # (for rendering)
+
+### SET PROTOCOL ###
+# protocol = "CSMA_CD"
+protocol = "RR"
+# protocol = "STR"
+if use_protocol == False:
+    protocol = 'None'
+
+turn_length = 2*int(game_size /3)
+timeout = 200
