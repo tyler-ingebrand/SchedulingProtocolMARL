@@ -165,7 +165,7 @@ def run_experiment(protocol,
                                                                                         exploration_type=Tabular_Q_Agent.ExplorationType.Epsilon, device=device),
                                                                     state_transformation=lambda state: state[:-1] if state is not None else None)],
                             determine_active_agent=determine_active,
-                            reward_functions=[reward_empty_hallway,reward_empty_hallway],
+                            reward_functions=[reward_empty_hallway,reward_occupied_hallway], # change the second one to also be reward_empty_hallway to get the ablation
                             update_memory = update_memory,
                             done_on_agent_transition=False # since transitions happen randomly, dont want to tell agent they reached a terminal state
                         )
