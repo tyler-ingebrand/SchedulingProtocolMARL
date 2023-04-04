@@ -1,3 +1,0 @@
-[submodule "gridgame/ModularRL"]
-	path = gridgame/ModularRL
-	url = https://github.com/tyler-ingebrand/ModularRL.git
