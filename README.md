@@ -6,9 +6,12 @@ This is the official repo for "Decentralized Conflict Resolution for Multi-Agent
 Gridgame is a gridworld with a variable number of agents acting the hallway environment. It follows the [Petting Zoo interface](https://github.com/Farama-Foundation/PettingZoo). MARL is handled by a seperate repo, [added as a submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules), called [ModularRL](https://github.com/tyler-ingebrand/ModularRL). ModularRL allows for the easy creation of MARL learners via a modular interface. 
 
 
+<img src=https://github.com/tyler-ingebrand/SchedulingProtocolMARL/blob/main/gridgame/screenshot.jpg data-canonical-src=https://github.com/tyler-ingebrand/SchedulingProtocolMARL/blob/main/gridgame/screenshot.jpg width="400" height="400" />
+
 ### Installation
 The major packages required are numpy, matplotlib, PettingZoo, gym, and gynmnasium, which will automatically install many of the packages below. 
 Keep in mind you must also install the submodule, register it with "pip install -e ModularRL", and also install its dependencies such as torch and sb3. 
+The python version used is 3.9.13. 
 
 The following versions are reported by pip:
 - cloudpickle==2.2.1
